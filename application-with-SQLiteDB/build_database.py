@@ -1,6 +1,6 @@
 import os
 from config import db
-from peoplelist.models import Person
+from peoplelist.models import Person, PersonSchema
 
 # Data to initialize database with
 PEOPLE = [
