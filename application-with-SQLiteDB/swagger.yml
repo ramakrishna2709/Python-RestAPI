@@ -14,7 +14,7 @@ basePath: /api
 paths:
   /people:
     get:
-      operationId: people.read_all
+      operationId: peoplelist.people.read_all
       tags:
         - People
       summary: Read the entire set of people, sorted by last name
@@ -40,7 +40,7 @@ paths:
                   description: Creation/Update timestamp of the person
 
     post:
-      operationId: people.create
+      operationId: peoplelist.people.create
       tags:
         - People
       summary: Create a person
@@ -79,7 +79,7 @@ paths:
 
   /people/{person_id}:
     get:
-      operationId: people.read_one
+      operationId: peoplelist.people.read_one
       tags:
         - People
       summary: Read one person
@@ -110,7 +110,7 @@ paths:
                 description: Creation/Update timestamp of the person record
 
     put:
-      operationId: people.update
+      operationId: peoplelist.people.update
       tags:
         - People
       summary: Update a person
@@ -151,7 +151,7 @@ paths:
                 description: Creation/Update timestamp of the person record
 
     delete:
-      operationId: people.delete
+      operationId: peoplelist.people.delete
       tags:
         - People
       summary: Delete a person from the people list
@@ -165,5 +165,3 @@ paths:
       responses:
         200:
           description: Successfully deleted a person
-
-
